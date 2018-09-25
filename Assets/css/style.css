@@ -1,0 +1,62 @@
+body {
+    background-image: url("../images/bg.png");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerfluid {
+    background-color: white;
+    opacity: .05;
+    width: 85%;
+    overflow: auto;
+    margin: 20px auto;
+    opacity: 0.8;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    border-bottom: grey 1px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+label {
+    padding: 10px;
+}
+
+.infoText {
+    width: 80%;
+}
+
+
+.wrapper{
+    padding: 10px;
+}
+
+.card{
+    padding: 5px;
+}
+
+.topArticle,
+.searchParameter{
+    background: whitesmoke;
+    padding: 0;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: grey;
+    width: 100%;
+    color:aliceblue;
+    padding-top: 5px;
+
+}
+.btn-dark{
+      margin-top: 30px;
+  }

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>New York Times Search</title>
+    <title>TimeSheet</title>
     <link rel="stylesheet" href="assets/css/boots.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
@@ -15,9 +15,18 @@
 <body>
     <div class="containerfluid header">
         <header>
-            <h1> <i class="glyphicon glyphicon-duplicate"></i> New York Times Search</h1>
+            <h1> <i class="glyphicon glyphicon-duplicate"></i> Employee Data Management</h1>
+            <p>A Comprehensive Directory of Employee Billable Hour</p>
         </header>
     </div>
+    <div class="containerfluid">
+        <div class="card">
+            <div class="currentEmployees">
+
+            </div>
+        </div>
+    </div>
+
     <div class="containerfluid">
         <div class="wrapper">
             <div class="card">
@@ -25,56 +34,34 @@
                     <div class="col-md-12">
                         <div class="formDiv">
                             <form id="search-parameter">
-                                <div class="searchParameter"><i class="glyphicon glyphicon-list-alt"></i> Search
-                                    Parameters</div>
+                                <div class="card-header" i class="glyphicon glyphicon-list-alt"></i>Add Employee</h5></div>
                                 <!--search term-->
-                                <label for="searchTerm-label">Search Term</label><br>
-                                <input type="text" id="searchTerm-input" class="infoText"> <br>
+                                <label for="searchTerm-label">Employee Name</label><br>
+                                <input type="text" id="employeeName-input" class="infoText"> <br>
                                 <!--number of records-->
-                                <label for="recordNumber-label">Numbers of Records to Retrieve</label><br>
-                                <input type="number" id="recordNumber-input" class="infoText"> <br>
+                                <label for="recordNumber-label">Role</label><br>
+                                <input type="number" id="role-input" class="infoText"> <br>
                                 <!--Start Year-->
-                                <label for="startYear-label">Start Year</label><br>
-                                <input type="text" id="startYear-input" class="infoText"> <br>
+                                <label for="startYear-label">Start Date</label><br>
+                                <input type="text" id="startDate-input" class="infoText"> <br>
                                 <!--end Year-->
-                                <label for="endYear-label">End Year</label><br>
-                                <input type="text" id="endYear-input" class="infoText"> <br>
+                                <label for="endYear-label">Monthly Rate</label><br>
+                                <input type="text" id="monthlyRate-input" class="infoText"> <br>
                                 <!-- search button-->
                                 <input id="input" type="submit" value="Search" class="btn btn-dark">
-                                <!--clear result-->
-                                <input id="clearResult" type="submit" value="ClearResult" class="btn btn-dark">
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
 
 
-        <!-- article area-->
-        <div class="wrapper">
-            <div class="card">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="topArticle"><i class="glyphicon glyphicon-list"></i> Top Article</div>
-                        <div class="articleDiv">
-                            <!--please throw shit to this article Div-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>Made with lots of <i class="glyphicon glyphicon-trash"></i></p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="assets/javascript/app.js">
-
-    </script>
 
 
+        </script>
 </body>
 
 </html>
