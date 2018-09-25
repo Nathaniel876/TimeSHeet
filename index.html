@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/boots.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -22,11 +22,9 @@
     <div class="containerfluid">
         <div class="card">
             <div class="currentEmployees">
-
             </div>
         </div>
     </div>
-
     <div class="containerfluid">
         <div class="wrapper">
             <div class="card">
@@ -34,7 +32,8 @@
                     <div class="col-md-12">
                         <div class="formDiv">
                             <form id="search-parameter">
-                                <div class="card-header" i class="glyphicon glyphicon-list-alt"></i>Add Employee</h5></div>
+                                <div class="card-header" i class="glyphicon glyphicon-list-alt"></i>Add Employee</h5>
+                                </div>
                                 <!--search term-->
                                 <label for="searchTerm-label">Employee Name</label><br>
                                 <input type="text" id="employeeName-input" class="infoText"> <br>
@@ -55,12 +54,20 @@
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
         <script>
-
-
-
-
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBDNMVJpNMDbiRW2NV8A2mtyKjniqK7DaM",
+                authDomain: "fire-base-it.firebaseapp.com",
+                databaseURL: "https://fire-base-it.firebaseio.com",
+                projectId: "fire-base-it",
+                storageBucket: "fire-base-it.appspot.com",
+                messagingSenderId: "758917252005"
+            };
+            firebase.initializeApp(config);
+            
+            var database = firebase.database();
         </script>
 </body>
 
