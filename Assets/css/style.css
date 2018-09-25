@@ -29,7 +29,7 @@ label {
 }
 
 .infoText {
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -41,22 +41,7 @@ label {
     padding: 5px;
 }
 
-.topArticle,
-.searchParameter{
-    background: whitesmoke;
-    padding: 0;
-}
 
-footer{
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    background-color: grey;
-    width: 100%;
-    color:aliceblue;
-    padding-top: 5px;
-
-}
 .btn-dark{
       margin-top: 30px;
   }
